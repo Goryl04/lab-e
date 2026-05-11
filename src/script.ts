@@ -87,7 +87,6 @@ function renderStyleSwitcher() {
         button.addEventListener('click', () => {
             changeStyle(styleName);
         });
-
         container.appendChild(button);
     }
 }
