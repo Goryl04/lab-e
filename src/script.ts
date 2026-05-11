@@ -35,7 +35,7 @@ const stylesDictionary: Record<string, string> = {};
 for (const path in cssFiles) {
     let buttonName = path.replace('/public/', '').replace('.css', '');
     buttonName = buttonName.replace(/_/g, ' ').toUpperCase();
-    const finalUrl = path.replace('/public', '');
+    const finalUrl = path.replace('/public/', './');
     stylesDictionary[buttonName] = finalUrl;
 }
 
